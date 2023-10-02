@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# Description:
+# The freevxfs filesystem type is a free version of the Veritas type filesystem. This is the primary filesystem type for HP-UX operating systems.
+# Rationale:
+# Removing support for unneeded filesystem types reduces the local attack surface of the system. If this filesystem type is not needed, disable it.
+
 l_output=""
 l_output2=""
 l_output3=""
