@@ -4,6 +4,13 @@
 # The squashfs filesystem type is a compressed read-only Linux filesystem embedded in small footprint systems. A squashfs image can be used without having to first decompress the image.
 # Rationale:
 # Removing support for unneeded filesystem types reduces the local attack surface of the system. If this filesystem type is not needed, disable it.
+# Impact:
+# As Snap packages utilizes squashfs as a compressed filesystem, disabling squashfs will cause Snap packages to fail.
+# Snap application packages of software are self-contained and work across a range of Linux distributions. 
+# This is unlike traditional Linux package management approaches, like APT or RPM, which require specifically adapted packages per Linux 
+# distribution on an application update and delay therefore application deployment from developers to their software's end-user. 
+# Snaps themselves have no dependency on any external store ("App store"), can be obtained from any source and can be therefore used for upstream software deployment.
+
 
 l_output=""
 l_output2=""
