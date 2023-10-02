@@ -5,7 +5,6 @@
 # Rationale:
 # Removing support for unneeded filesystem types reduces the local attack surface of the system. If this filesystem type is not needed, disable it.
 
-
 l_output=""
 l_output2=""
 l_output3=""
